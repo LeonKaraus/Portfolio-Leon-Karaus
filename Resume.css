@@ -147,14 +147,14 @@ h2 {
   .Ausbildung,
   .skills,
   .Erfahrung {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 8px;
   }
 
   .Ausbildung-List,
   .Erfahrung-List,
   .skills-list {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .skills-list {
@@ -175,7 +175,7 @@ h2 {
   .Ausbildung,
   .skills,
   .Erfahrung {
-    font-size: 0.7em;
+    font-size: 1em;
     padding: 5px;
   }
 
