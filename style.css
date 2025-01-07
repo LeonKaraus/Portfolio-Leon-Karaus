@@ -394,10 +394,6 @@ p {
 }
 
 @media screen and (max-width: 750px) {
-  .title {
-    font-size: 26vw;
-  }
-
   /* Footer-Grundstruktur */
   .container {
     padding: 0;
