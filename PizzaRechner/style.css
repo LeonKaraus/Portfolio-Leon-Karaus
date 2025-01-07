@@ -93,7 +93,7 @@ button:hover {
 
 @media (max-width: 750px) {
   .container {
-    width: 50%;
+    width: 75%;
     max-width: 300px;
   }
 }
