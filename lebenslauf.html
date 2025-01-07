@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebenslauf</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Resume.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./Bilder/Icons/IconBlau.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Caveat:wght@400..700&family=Erica+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oi&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="padding-left: 20px; padding-right: 20px">
+      <section>
+        <nav class="navbar">
+          <a class="navbar-item" href="./index.html">LEON KARAUS</a>
+          <div class="navbar-group">
+            <a href="./lebenslauf.html" class="navbar-link">Lebenslauf</a>
+            <a href="./hobbie.html" class="navbar-link">Hobbies</a>
+            <a href="./projects.html" class="navbar-link link-right"
+              >Projekte</a
+            >
+          </div>
+          <!-- Hamburger-Menü -->
+          <!-- Hamburger-Menü-Button -->
+          <button class="hamburger-menu" onclick="openMenu()">☰</button>
+
+          <!-- Seitliches Dropdown-Menü -->
+          <div class="side-menu" id="sideMenu">
+            <button class="close-button" onclick="closeMenu()">✖</button>
+            <a href="./lebenslauf.html" class="navbar-link">Lebenslauf</a>
+            <a href="./hobbie.html" class="navbar-link">Hobbies</a>
+            <a href="./projects.html" class="navbar-link link-bottom"
+              >Projekte</a
+            >
+          </div>
+        </nav>
+      </section>
+
+      <div class="Ausbildung">
+        <h2>Ausbildung</h2>
+        <div>
+          <ul class="Ausbildung-List">
+            <li>
+              <h4>Bachelor of Science Medieninformatik</h4>
+              <p>Technische Hochschule Nürnberg Georg Simon Ohm 2019-2024</p>
+            </li>
+            <li>
+              <h4>Fachabitur</h4>
+              <p>FOS/BOS Rosenheim 2018-2019</p>
+            </li>
+            <li>
+              <h4>Ausbildung Mediengestalter Digital und Print</h4>
+              <p>Alpenstolz GmbH 2015-2018</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h2>Technische Fähigkeiten</h2>
+        <ul class="skills-list">
+          <li class="font1">HTML</li>
+          <li class="font2">CSS</li>
+          <li class="font3">JavaScript</li>
+          <li class="font4">C#</li>
+          <li class="font5">TypeScript</li>
+          <li class="font6">React</li>
+          <li class="font7">Figma</li>
+          <li class="font8">Git</li>
+          <li class="font9">Adobe Illustrator</li>
+          <li class="font10">Affinity Designer</li>
+          <li class="font11">Microsoft Office</li>
+        </ul>
+      </div>
+
+      <div class="Erfahrung">
+        <h2>Arbeitserfahrung</h2>
+        <ul class="Erfahrung-List">
+          <li>
+            <h4>Werkstudent bei das Netzwerk (September 2020 - August 2023)</h4>
+            <ul>
+              <li>Netzwerk und Systemadministration</li>
+              <li>IT-Support</li>
+              <li>Kundenbetreuung</li>
+            </ul>
+          </li>
+          <li>
+            <h4>
+              Praxissemester Halvotec Group Digital Experts (September 2021 -
+              Februar 2022)
+            </h4>
+            <ul>
+              <li>Front- und Backend Entwicklung</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <section>
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Erste Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/CheckBoard.jpg"
+                  alt="checkbaord"
+                  width="300"
+                />
+              </div>
+            </div>
+
+            <!-- Zweite Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <h4>Kontakt</h4>
+                <p>Email: karaus@web.de</p>
+                <p>Telefon: +49 1713800832</p>
+              </div>
+            </div>
+
+            <!-- Dritte Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/Mascot.jpg"
+                  alt="Mascot"
+                  width="300"
+                  class="mascot-image"
+                />
+              </div>
+            </div>
+
+            <!-- Vierte Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/CheckBoard.jpg"
+                  alt="checkbaord"
+                  width="300"
+                  style="transform: scaleX(-1)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Unterer Bereich -->
+          <div class="footer-bottom">
+            <p>&copy; 2025, Leon Karaus. All rights reserved.</p>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="./Lebenslauf/script.js"></script>
+  </body>
+</html>

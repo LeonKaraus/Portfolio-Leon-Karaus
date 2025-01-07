@@ -1,0 +1,183 @@
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startseite</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./Bilder/Icons/IconBlau.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Caveat:wght@400..700&family=Erica+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oi&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <section>
+        <nav class="navbar">
+          <a class="navbar-item" href="./index.html">LEON KARAUS</a>
+          <div class="navbar-group">
+            <a href="./lebenslauf.html" class="navbar-link">Lebenslauf</a>
+            <a href="./hobbie.html" class="navbar-link">Hobbies</a>
+            <a href="./projects.html" class="navbar-link link-right"
+              >Projekte</a
+            >
+          </div>
+          <!-- Hamburger-Menü -->
+          <!-- Hamburger-Menü-Button -->
+          <button class="hamburger-menu" onclick="openMenu()">☰</button>
+
+          <!-- Seitliches Dropdown-Menü -->
+          <div class="side-menu" id="sideMenu">
+            <button class="close-button" onclick="closeMenu()">✖</button>
+            <a href="./lebenslauf.html" class="navbar-link">Lebenslauf</a>
+            <a href="./hobbie.html" class="navbar-link">Hobbies</a>
+            <a href="./projects.html" class="navbar-link link-bottom"
+              >Projekte</a
+            >
+          </div>
+        </nav>
+      </section>
+      <div class="intro">
+        <section>
+          <h1 class="title">I'M LEON.</h1>
+          <img
+            class="portrait"
+            src="./Bilder/LeonBild.jpeg"
+            alt="Leon Karaus Porträt"
+          />
+        </section>
+
+        <section></section>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion">
+          <input type="checkbox" id="section1" />
+          <label for="section1">
+            <span class="text">Das bin ich.</span>
+            <span class="symbol">+</span>
+          </label>
+          <div class="content">
+            <p>
+              Hi, ich bin Leon – ein kreativer Kopf mit einer Leidenschaft für
+              modernes Design und innovative Technologien. Mit einem Hintergrund
+              in Medieninformatik und einer Ausbildung zum Mediengestalter
+              kombiniere ich technisches Know-how mit einem Auge für Ästhetik.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <input type="checkbox" id="section2" />
+          <label for="section2">
+            <span class="text">Was ich mache.</span>
+            <span class="symbol">+</span>
+          </label>
+          <div class="content">
+            <p>
+              Ich beschäftige mich intensiv mit Frontend-Technologien wie HTML,
+              CSS und JavaScript. Aktuell vertiefe ich mein Wissen in React und
+              arbeite an Projekten rund um E-Commerce und Shopify-Entwicklung.
+              Außerdem habe ich ein starkes Interesse an der Gestaltung von
+              benutzerfreundlichen und ästhetischen Interfaces.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <input type="checkbox" id="section3" />
+          <label for="section3">
+            <span class="text">Was ich suche.</span>
+            <span class="symbol">+</span>
+          </label>
+          <div class="content">
+            <p>
+              Ich bin auf der Suche nach einer spannenden Position als Frontend-
+              oder Webentwickler. Mein Ziel ist es, in einem kreativen Team
+              mitzuarbeiten, um innovative digitale Lösungen zu entwickeln und
+              meine Fähigkeiten kontinuierlich weiter auszubauen.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="theme-changer">
+          <button class="theme-button" onclick="changeTheme('theme1')">
+            Blau/Rosa
+          </button>
+          <button class="theme-button" onclick="changeTheme('theme2')">
+            Rot/Orange
+          </button>
+          <button class="theme-button" onclick="changeTheme('theme3')">
+            Grün/Grau
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Erste Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/CheckBoard.jpg"
+                  alt="checkbaord"
+                  width="300"
+                />
+              </div>
+            </div>
+
+            <!-- Zweite Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <h4>Kontakt</h4>
+                <p>Email: karaus@web.de</p>
+                <p>Telefon: +49 1713800832</p>
+              </div>
+            </div>
+
+            <!-- Dritte Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/Mascot.jpg"
+                  alt="Mascot"
+                  width="300"
+                  class="mascot-image"
+                />
+              </div>
+            </div>
+
+            <!-- Vierte Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/CheckBoard.jpg"
+                  alt="checkbaord"
+                  width="300"
+                  style="transform: scaleX(-1)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Unterer Bereich -->
+          <div class="footer-bottom">
+            <p>&copy; 2025, Leon Karaus. All rights reserved.</p>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="./Lebenslauf/script.js"></script>
+  </body>
+</html>

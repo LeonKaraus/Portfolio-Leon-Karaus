@@ -1,0 +1,109 @@
+body {
+  background-color: #ffd1dc; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff0033; 
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: 2px solid #ff0033; 
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #ffe6eb;
+}
+
+.restart {
+  font-size: 2rem;
+  color: #ff0033; 
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.restart:hover {
+  text-decoration: underline;
+}
+
+.pizza::before {
+  content: "🍕"; 
+}
+
+.circle::before {
+  content: "⚪"; /
+}
+
+.win-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    209,
+    220,
+    0.95
+  ); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.win-message p {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff0033; 
+  margin: 0;
+}
+
+.win-message.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

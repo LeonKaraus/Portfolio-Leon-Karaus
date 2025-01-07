@@ -1,0 +1,240 @@
+:root {
+  --main-color: #4911ff;
+  --secondary-color: #ffd2f9;
+}
+
+.HEADING {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Erica One", serif;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 0;
+  font-size: 16vw;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  max-width: 100%;
+}
+
+h1:hover {
+  text-decoration: underline;
+}
+
+.Leka-Pizza {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; /* 4 Spalten mit gleicher Breite */
+  grid-gap: 20px; /* Abstand zwischen den Kacheln */
+  padding: 20px; /* Innenabstand */
+  height: 100vh;
+
+  border: solid 4px var(--main-color);
+  border-radius: 25px;
+}
+
+.Leka-Pizza .head {
+  color: var(--main-color);
+  grid-area: 1 / 1 / 2 / 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14vw;
+  font-weight: bolder;
+}
+
+.Leka-Pizza .text {
+  color: var(--main-color);
+  grid-area: 2 / 1 / 3 / 3;
+  font-family: Arial, Helvetica, sans-serif;
+  place-self: center;
+  font-weight: bold;
+  padding: 13px;
+  text-align: justify;
+}
+
+.Leka-Pizza .content {
+  grid-area: 1 / 3 / 3 / 5;
+  place-self: center;
+}
+
+.lekaimg {
+  width: 30vw;
+  border: var(--main-color) solid 4px;
+  border-radius: 25px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.link {
+  color: var(--main-color);
+}
+
+.Sport {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; /* 4 Spalten mit gleicher Breite */
+  grid-gap: 20px; /* Abstand zwischen den Kacheln */
+  padding: 20px; /* Innenabstand */
+  height: 100vh;
+
+  border: solid 4px var(--main-color);
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+.Sport .head {
+  color: var(--main-color);
+  grid-area: 1 / 3 / 2 / 5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12vw;
+  font-weight: bolder;
+}
+
+.Sport .text {
+  color: var(--main-color);
+  grid-area: 2 / 3 / 3 / 5;
+  font-family: Arial, Helvetica, sans-serif;
+  place-self: center;
+  font-weight: bold;
+  padding: 13px;
+  text-align: justify;
+}
+
+.Sport .content {
+  grid-area: 1 / 1 / 3 / 3;
+  place-self: center;
+}
+
+.Weitere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; /* 4 Spalten mit gleicher Breite */
+  grid-gap: 20px; /* Abstand zwischen den Kacheln */
+  padding: 20px; /* Innenabstand */
+  height: 100vh;
+
+  border: solid 4px var(--main-color);
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+.Weitere .head {
+  color: var(--main-color);
+  grid-area: 1 / 1 / 2 / 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9vw;
+  font-weight: bolder;
+  padding: 13px;
+}
+
+.Weitere .text {
+  color: var(--main-color);
+  grid-area: 2 / 1 / 3 / 3;
+  font-family: Arial, Helvetica, sans-serif;
+  place-self: center;
+  font-weight: bold;
+  padding: 13px;
+  text-align: justify;
+}
+
+.Weitere .content {
+  grid-area: 1 / 3 / 3 / 5;
+  place-self: center;
+}
+
+@media (max-width: 960px) {
+  .Leka-Pizza,
+  .Sport,
+  .Weitere {
+    display: grid;
+    grid-template-columns: 1fr; /* Nur eine Spalte */
+    grid-template-rows: auto; /* Automatische Höhenanpassung */
+    grid-gap: 20px; /* Abstand zwischen den Elementen */
+    padding: 20px; /* Innenabstand */
+    height: auto; /* Dynamische Höhe */
+  }
+
+  .Leka-Pizza .head,
+  .Sport .head,
+  .Weitere .head {
+    grid-area: auto;
+    text-align: center; /* Zentriert den Text */
+    font-size: 15vw; /* Verkleinert die Schriftgröße */
+  }
+
+  .Leka-Pizza .text,
+  .Sport .text,
+  .Weitere .text {
+    grid-area: auto;
+    text-align: justify;
+    font-size: 1em; /* Passt die Schriftgröße an */
+  }
+
+  .Leka-Pizza .content,
+  .Sport .content,
+  .Weitere .content {
+    grid-area: auto;
+    display: flex;
+    justify-content: center; /* Zentriert das Bild horizontal */
+  }
+
+  .lekaimg {
+    width: 80%; /* Reduziert die Bildbreite */
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .Leka-Pizza,
+  .Sport,
+  .Weitere {
+    padding: 15px;
+    grid-gap: 15px;
+  }
+
+  .Leka-Pizza .head,
+  .Sport .head,
+  .Weitere .head {
+    font-size: 12vw;
+  }
+
+  .Leka-Pizza .text,
+  .Sport .text,
+  .Weitere .text {
+    font-size: 0.9em;
+  }
+
+  .lekaimg {
+    width: 100%; /* Bild nimmt die volle Breite des Containers ein */
+  }
+}
+
+@media (max-width: 480px) {
+  .Leka-Pizza,
+  .Sport,
+  .Weitere {
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  .Leka-Pizza .head,
+  .Sport .head,
+  .Weitere .head {
+    font-size: 8vw;
+  }
+
+  .Leka-Pizza .text,
+  .Sport .text,
+  .Weitere .text {
+    font-size: 0.8em;
+  }
+
+  .lekaimg {
+    width: 100%; /* Bild bleibt responsive */
+  }
+}

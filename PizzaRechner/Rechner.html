@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Rechner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./Icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pizza Rechner</h1>
+
+      <label for="numPizzas">Anzahl der Pizzen:</label>
+      <input type="number" id="numPizzas" min="1" value="1" />
+
+      <label for="pizzaWeight">Gewicht pro Pizza (in g):</label>
+      <input type="number" id="pizzaWeight" min="1" value="250" />
+
+      <label for="waterPercentage">Wasseranteil (%):</label>
+      <input type="number" id="waterPercentage" min="50" max="100" value="60" />
+
+      <label for="yeastType">Hefetyp:</label>
+      <select id="yeastType">
+        <option value="freshYeast">Frische Hefe</option>
+        <option value="dryYeast">Trockenhefe</option>
+        <option value="sourdough">Sauerteig</option>
+      </select>
+
+      <label for="oilEnabled">Öl hinzufügen?</label>
+      <input type="checkbox" id="oilEnabled" />
+
+      <div id="oilPercentageContainer" style="display: none">
+        <label for="oilPercentage">Ölanteil (%):</label>
+        <input type="number" id="oilPercentage" min="1" max="10" value="5" />
+      </div>
+
+      <button onclick="calculateIngredients()">Berechnen</button>
+
+      <div id="results" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

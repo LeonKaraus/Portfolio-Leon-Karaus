@@ -1,0 +1,185 @@
+:root {
+  --main-color: #4911ff;
+  --secondary-color: #ffd2f9;
+}
+
+.Ausbildung {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-color);
+  text-align: center;
+  border: var(--main-color) solid 4px;
+  margin-top: 35px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.Ausbildung-List {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+li {
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-family: "Erica One", serif;
+  margin-bottom: 40px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.skills {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-color);
+  text-align: center;
+  border: var(--main-color) solid 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 gleich große Spalten */
+  gap: 20px; /* Abstand zwischen den Elementen */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.skills-list li {
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--main-color);
+}
+
+.font1 {
+  font-family: "Arial", sans-serif;
+}
+.font2 {
+  font-family: "Verdana", sans-serif;
+}
+.font3 {
+  font-family: "Courier New", monospace;
+}
+.font4 {
+  font-family: "Georgia", serif;
+}
+.font5 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.font6 {
+  font-family: "Times New Roman", serif;
+}
+.font7 {
+  font-family: "Impact", sans-serif;
+}
+.font8 {
+  font-family: "Comic Sans MS", cursive;
+}
+.font9 {
+  font-family: "Tahoma", sans-serif;
+}
+.font10 {
+  font-family: "Lucida Console", monospace;
+}
+.font11 {
+  font-family: "Palatino", serif;
+}
+
+.Erfahrung {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-color);
+  text-align: center;
+  border: var(--main-color) solid 4px;
+  margin-top: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.Erfahrung-List {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.Erfahrung-List ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 960px) {
+  h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .Ausbildung,
+  .skills,
+  .Erfahrung {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .Ausbildung-List,
+  .Erfahrung-List,
+  .skills-list {
+    font-size: 1em;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .Ausbildung,
+  .skills,
+  .Erfahrung {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+
+  .Ausbildung-List,
+  .Erfahrung-List,
+  .skills-list {
+    font-size: 0.9em;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .Ausbildung,
+  .skills,
+  .Erfahrung {
+    font-size: 0.7em;
+    padding: 5px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+}

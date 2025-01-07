@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekte</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Projekte.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./Bilder/Icons/IconBlau.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Caveat:wght@400..700&family=Erica+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oi&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="padding-left: 20px; padding-right: 20px">
+      <section>
+        <nav class="navbar">
+          <a class="navbar-item" href="./index.html">LEON KARAUS</a>
+          <div class="navbar-group">
+            <a href="./lebenslauf.html" class="navbar-link">Lebenslauf</a>
+            <a href="./hobbie.html" class="navbar-link">Hobbies</a>
+            <a href="./projects.html" class="navbar-link link-right"
+              >Projekte</a
+            >
+          </div>
+          <!-- Hamburger-Menü -->
+          <!-- Hamburger-Menü-Button -->
+          <button class="hamburger-menu" onclick="openMenu()">☰</button>
+
+          <!-- Seitliches Dropdown-Menü -->
+          <div class="side-menu" id="sideMenu">
+            <button class="close-button" onclick="closeMenu()">✖</button>
+            <a href="./lebenslauf.html" class="navbar-link">Lebenslauf</a>
+            <a href="./hobbie.html" class="navbar-link">Hobbies</a>
+            <a href="./projects.html" class="navbar-link link-bottom"
+              >Projekte</a
+            >
+          </div>
+        </nav>
+      </section>
+
+      <div class="HEADING">
+        <h1>Projekte</h1>
+      </div>
+
+      <section>
+        <div class="ProjectContainer">
+          <div class="project1">
+            <h2>Pizza Rechner</h2>
+            <img class="projectImg" src="./Bilder/Projects/PizzaRechner.png" />
+            <p>Einfacher Pizza Rechner zum genauen berechnen der Zutaten.</p>
+            <a href="./PizzaRechner/Rechner.html">ZUM RECHNER</a>
+          </div>
+
+          <div class="project1">
+            <h2>TIK TAK TOE</h2>
+            <img class="projectImg" src="./Bilder/Projects/TikTakToe.png" />
+            <p>Tik Tak Toe Spiel.</p>
+            <a href="./TikTakToe/tiktaktoe.html">ZUM SPIEL</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Erste Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/CheckBoard.jpg"
+                  alt="checkbaord"
+                  width="300"
+                />
+              </div>
+            </div>
+
+            <!-- Zweite Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <h4>Kontakt</h4>
+                <p>Email: karaus@web.de</p>
+                <p>Telefon: +49 1713800832</p>
+              </div>
+            </div>
+
+            <!-- Dritte Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/Mascot.jpg"
+                  alt="Mascot"
+                  width="300"
+                  class="mascot-image"
+                />
+              </div>
+            </div>
+
+            <!-- Vierte Kachel -->
+            <div class="footer-box">
+              <div class="footer-content">
+                <img
+                  src="./Bilder/CheckBoard.jpg"
+                  alt="checkbaord"
+                  width="300"
+                  style="transform: scaleX(-1)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Unterer Bereich -->
+          <div class="footer-bottom">
+            <p>&copy; 2025, Leon Karaus. All rights reserved.</p>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="./Lebenslauf/script.js"></script>
+  </body>
+</html>
