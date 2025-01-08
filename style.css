@@ -274,7 +274,7 @@ body {
 }
 
 .accordion input[type="checkbox"]:checked + label + .content {
-  max-height: 150px;
+  max-height: 500px;
   padding: 15px;
 }
 
@@ -478,6 +478,14 @@ p {
 @media (min-width: 769px) {
   .dropdown-menu {
     display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .theme-button {
+    font-size: 12px;
+    padding: 8px 8px;
+    margin: 20px 0px;
   }
 }
 
